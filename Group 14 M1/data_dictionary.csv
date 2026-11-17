@@ -1,0 +1,5 @@
+uColumn,Type as loaded,Intended type,Description,Example,Notes
+DATE,text,datetime (YYYY-MM-DD),Date the payment was made,2025-02-28,No missing values; range 2025-02-28 to 2025-12-29
+MDA,text,category,Ministry/Department/Agency that made the payment,NIGERIAN NAVY,Only one MDA in current file; standardise names in M2
+Beneficiary,text,category,Account or entity that received the payment,IPPIS TRANSACTION ACCOUNT,3 distinct values in current file (IPPIS payroll; Chief of Naval Staff personnel account; Naval HQ maritime operations account)
+Amount (NGN),text,float (naira),Payment amount in Nigerian naira,"?259,475,184.39","Leading '?' is a damaged naira sign; contains thousands commas; strip both and convert in M2"
